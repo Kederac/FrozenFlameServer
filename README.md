@@ -184,6 +184,19 @@ Default ports list:
 7777/udp
 7777
 ```
+### Player Disconnected with EasyCheat error
+```
+[2022.11.19-12.18.59:367][679]LogNet: Join succeeded: TOTO
+[2022.11.19-12.19.01:847][729]LogNet: Server connection received: ActorChannelFailure [UChannel] ChIndex: 0, Closing: 0 [UNetConne02.6.12:53811, Name: IpConnection_2147459127, Driver: GameNetDriver IpNetDriver_2147482452, IsServer: YES, PC: BP_PlayerController
+[2022.11.19-12.19.59:005][868]LogEOSSDK: LogEOSAntiCheat: [AntiCheatServer] Queueing action to remove Client: 0x7f605bda2e20 ActionReason: 3 Details: Authentication timed out (1/2)
+[2022.11.19-12.19.59:862][885]LogEOSSDK: LogEOSAntiCheat: [AntiCheatServer] [ClientActionRequired] Client: 0x7f605bda2e20 Action: 1 ActionReason: 3 Details: Authentication timed out (1/2)
+[2022.11.19-12.19.59:870][885]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: X.X.X.X:53811, Name: IpConnection_2147459127, Driver: GameNetDriver IpNetDriver_2147482452, IsServer: YES, PC: BP_PlayerController_C_2147459118, Owner: BP_PlayerController_C_2147459118, UniqueId: Steam:UNKNOWN [0x1100001072C3E33]
+[2022.11.19-12.19.59:940][886]LogNet: UChannel::ReceivedSequencedBunch: Bunch.bClose == true. ChIndex == 0. Calling ConditionalCleanUp.
+[2022.11.19-12.19.59:994][887]LogEOSSDK: LogEOSAntiCheat: [AntiCheatServer] [UnregisterClient-001] ClientHandle: 0x7f605bda2e20
+[2022.11.19-12.19.59:994][887]LogGameEvent: Player (Nimix:76561198080605747) Disconnected
+```
+Create desktop icon and launch the game with this.
+
 ### Server Crashes after Tutorial
 
 If you are crashing after the tutorial, install the standard [Steam Client](https://store.steampowered.com/about/) on the server you are hosting from. You simply need to install it and let it update. Once complete you can close it. 
